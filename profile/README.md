@@ -96,9 +96,7 @@ Releases follow semantic versioning: no import path changes within a major versi
 
 <a href="https://starhistory.io">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.starhistory.io/png?repos=go-ozzo/ozzo-validation,go-ozzo/ozzo-dbx,go-ozzo/ozzo-routing,go-ozzo/ozzo-log,go-ozzo/ozzo-config,go-ozzo/ozzo-di&style=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.starhistory.io/png?repos=go-ozzo/ozzo-validation,go-ozzo/ozzo-dbx,go-ozzo/ozzo-routing,go-ozzo/ozzo-log,go-ozzo/ozzo-config,go-ozzo/ozzo-di&style=comparison" />
-   <img alt="go-ozzo Star History" src="https://api.starhistory.io/png?repos=go-ozzo/ozzo-validation,go-ozzo/ozzo-dbx,go-ozzo/ozzo-routing,go-ozzo/ozzo-log,go-ozzo/ozzo-config,go-ozzo/ozzo-di&style=comparison" width="800" />
+   <img alt="go-ozzo Ecosystem Star History" src="https://api.starhistory.io/png?repos=go-ozzo/ozzo-validation,go-ozzo/ozzo-dbx,go-ozzo/ozzo-routing,go-ozzo/ozzo-log,go-ozzo/ozzo-config,go-ozzo/ozzo-di&style=comparison" width="800" />
  </picture>
 </a>
 
