@@ -76,17 +76,31 @@ func main() {
 
 ## Status
 
-After being unmaintained since 2020, go-ozzo is **actively maintained** again as of July 2026.
+After being unmaintained since 2020, go-ozzo is **actively maintained** again since July 2026.
+
+**Recent releases:**
+- **[ozzo-validation v4.5.0](https://github.com/go-ozzo/ozzo-validation/releases/tag/v4.5.0)** — restores the v4.3.0 behavior for empty values that v4.4.0 changed, adds `errors.Is` support and `Flatten()` for field errors, and an optional build without `text/template`
+- **[ozzo-routing v2.4.1](https://github.com/go-ozzo/ozzo-routing/releases/tag/v2.4.1)** — security release, see [GHSA-g7pf-jc4r-mx95](https://github.com/go-ozzo/ozzo-routing/security/advisories/GHSA-g7pf-jc4r-mx95); please upgrade
+- **[ozzo-dbx v1.7.0](https://github.com/go-ozzo/ozzo-dbx/releases/tag/v1.7.0)** — upsert for models and SQLite, locking reads (`ForUpdate`/`ForShare`), transaction and upsert fixes
 
 **What's happening:**
-- Full review of all open PRs and issues completed
-- Bug fixes and community contributions being reviewed and merged
-- CI being modernized (GitHub Actions, golangci-lint, codecov)
-- New validation rules coming: UUID v7, ULID, and more
+- Every repository is moving to the same standard: GitHub Actions CI on supported Go versions, race and 32-bit tests, strict linting, coverage, govulncheck, and the downstream test suites of real users before each release
+- ozzo-log, ozzo-config and ozzo-di are getting Go modules and their first tagged releases (v1.0.0)
+- Security issues can be reported privately through each repository's **Security** tab
 
-All improvements are **additive and backward-compatible** — no import path changes, no migration needed. Minimum Go version is being updated from 1.13 to 1.21+ ([discussion](https://github.com/go-ozzo/ozzo-validation/issues/207)).
+Releases follow semantic versioning: no import path changes within a major version, and anything that changes existing behavior is called out in the changelog.
 
-See [ozzo-validation#207](https://github.com/go-ozzo/ozzo-validation/issues/207) for the full roadmap and discussion.
+---
+
+## Star History
+
+<a href="https://starhistory.io">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.starhistory.io/png?repos=go-ozzo/ozzo-validation,go-ozzo/ozzo-dbx,go-ozzo/ozzo-routing,go-ozzo/ozzo-log,go-ozzo/ozzo-config,go-ozzo/ozzo-di&style=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.starhistory.io/png?repos=go-ozzo/ozzo-validation,go-ozzo/ozzo-dbx,go-ozzo/ozzo-routing,go-ozzo/ozzo-log,go-ozzo/ozzo-config,go-ozzo/ozzo-di&style=comparison" />
+   <img alt="go-ozzo Star History" src="https://api.starhistory.io/png?repos=go-ozzo/ozzo-validation,go-ozzo/ozzo-dbx,go-ozzo/ozzo-routing,go-ozzo/ozzo-log,go-ozzo/ozzo-config,go-ozzo/ozzo-di&style=comparison" width="800" />
+ </picture>
+</a>
 
 ---
 
